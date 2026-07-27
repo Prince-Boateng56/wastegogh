@@ -1,0 +1,6 @@
+{
+  "name": "WasteGoGH",
+  "description": "Modern technology-driven waste management and recycling platform in Ghana.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

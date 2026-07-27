@@ -1,0 +1,79 @@
+@import "tailwindcss";
+
+@keyframes float-slow {
+  0%, 100% {
+    transform: translate(0px, 0px) scale(1) rotate(0deg);
+  }
+  33% {
+    transform: translate(50px, -70px) scale(1.12) rotate(120deg);
+  }
+  66% {
+    transform: translate(-40px, 60px) scale(0.92) rotate(240deg);
+  }
+}
+
+@keyframes float-reverse {
+  0%, 100% {
+    transform: translate(0px, 0px) scale(1) rotate(0deg);
+  }
+  33% {
+    transform: translate(-60px, 50px) scale(0.88) rotate(-120deg);
+  }
+  66% {
+    transform: translate(40px, -50px) scale(1.18) rotate(-240deg);
+  }
+}
+
+@keyframes float-center {
+  0%, 100% {
+    transform: translate(-50%, -50%) scale(1) rotate(0deg);
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.25) rotate(180deg);
+  }
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    opacity: 0.5;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.85;
+    transform: scale(1.1);
+  }
+}
+
+@keyframes mesh-shift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animate-float-slow {
+  animation: float-slow 20s ease-in-out infinite;
+}
+
+.animate-float-reverse {
+  animation: float-reverse 24s ease-in-out infinite;
+}
+
+.animate-float-center {
+  animation: float-center 28s ease-in-out infinite;
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 9s ease-in-out infinite;
+}
+
+.animate-mesh-bg {
+  background-size: 200% 200%;
+  animation: mesh-shift 16s ease infinite;
+}
+
